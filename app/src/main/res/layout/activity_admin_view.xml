@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/mainscreen"
+    android:padding="16dp">
+
+    <!-- Overview Title -->
+    <TextView
+        android:id="@+id/overview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Total Spending -->
+    <TextView
+        android:id="@+id/total_spending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spending: $X,XXX"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Remaining Budget -->
+    <TextView
+        android:id="@+id/remaining_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget: $X,XXX"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Quick Actions Buttons -->
+    <Button
+        android:id="@+id/btn_add_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"/>
+
+    <Button
+        android:id="@+id/btn_view_reports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Reports"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"/>
+
+    <Button
+        android:id="@+id/btn_manage_budgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Budgets"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"/>
+
+    <!-- Expense Approval Requests Title -->
+    <TextView
+        android:id="@+id/expense_approval_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Approval Requests"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Placeholder for Pending Approvals -->
+    <TextView
+        android:id="@+id/pending_approval_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Pending approvals will be displayed here)"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Expense Categories Chart Title -->
+    <TextView
+        android:id="@+id/chart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Categories"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Placeholder for Expense Categories Chart -->
+    <View
+        android:id="@+id/chart_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Recent Activity Title -->
+    <TextView
+        android:id="@+id/recent_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Activity"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Placeholder for Recent Activity List -->
+    <TextView
+        android:id="@+id/recent_activity_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(List of recent expenses...)"
+        android:textColor="@color/white" />
+
+</LinearLayout>
