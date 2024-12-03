@@ -25,8 +25,7 @@
         <!-- Main Activity (opens after splash) -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
         <!-- Admin Login Activity -->
         <activity
@@ -38,10 +37,23 @@
             android:name=".EmployeeLoginActivity"
             android:exported="true" />
 
-        <!-- Employee View Activity (add this if needed) -->
+        <!-- Employee View Activity -->
         <activity
             android:name=".EmployeeViewActivity"
             android:exported="true" />
+
+        <!-- Admin Dashboard Activity -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SubmitExpenseActivity"
+            android:label="Submit Expense" />
+        <activity
+            android:name=".ExpenseSummaryActivity"
+            android:label="Expense Summary" />
+
 
     </application>
 

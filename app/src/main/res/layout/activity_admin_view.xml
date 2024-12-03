@@ -38,14 +38,33 @@
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Expense Type input -->
+    <EditText
+        android:id="@+id/expenseType"
+        android:hint="Enter Expense Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Expense Amount input -->
+    <EditText
+        android:id="@+id/expenseAmount"
+        android:hint="Enter Expense Amount"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveExpense"
+        android:text="Save Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <!-- Quick Actions Buttons -->
     <Button
-        android:id="@+id/btn_add_expense"
-        android:layout_width="match_parent"
+        android:id="@+id/btnAddExpense"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Expense"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/cardview_shadow_start_color"/>
+        android:text="Add Expense" />
 
     <Button
         android:id="@+id/btn_view_reports"
@@ -63,16 +82,13 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/cardview_shadow_start_color"/>
 
-    <!-- Expense Approval Requests Title -->
-    <TextView
-        android:id="@+id/expense_approval_title"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_approve_expenses"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Expense Approval Requests"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"/>
 
     <!-- Placeholder for Pending Approvals -->
     <TextView
